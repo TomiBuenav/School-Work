@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('Fuente/src/DancingScript-Bold.otf');
+}
+body{
+  background-color: #02010a;
+}
+
+header {
+  padding: 2vh 2vw;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #5b7989;
+  font-size: 40px;
+  font-family: 'Dancing Script';
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px 2px #02010a;
+}
+
+#contenido figcaption{
+  font-size: 20px;
+  font-family: 'Dancing Script';
+  text-decoration: underline;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#imagen1{
+  margin-top: 150px;
+  display: block;
+  margin: auto;
+  width: 600px;
+  height: 350px;
+  background-color: #82c3a6;
+  padding: 16px 191px 16px 200px;
+}
+
+#imagen2 img {
+  width: 450px;
+  height: 250px;
+  border: 2px solid black;
+  transition: transform 1s ease;
+}
+
+.rotateMe:hover {
+transform: rotate(10deg);
+animation-name: animantionShadow;
+box-shadow: #82c3a6;
+}
+
+@keyframes animantionShadow {
+from {
+box-shadow: 2px 2px #82c3a6;
+}
+to {
+box-shadow: 2px 2px #82c3a6;
+}
+}
+
+#imagen3 img{
+  width: 450px;
+  height: 250px;
+  transition: transform 1s ease;
+  border: 2px solid black;
+}
+
+.traslacion:hover {
+  transform: translateX(20px) translatey(-5px);
+  box-shadow: 0px 0px 20px 0px #82c3a6;
+}
+
+.contenedor > div {
+	text-align: center;
+  padding: 10px;
+	margin: 10px;
+	width: 50%;
+
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+  background-color: #d5c75f;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+footer {
+	padding-top: 10px;
+	text-align: center;
+  background-color: #C6d5c5;
+}
+
+.piecontenedor {
+	display: flex;
+	flex-direction: row;
+  text-align: center;
+}
+
+#pie .piecontenedor div {
+  font-family: 'Dancing Script';
+	text-align: center;
+	padding: 10px;
+	width: 24%;
+	margin: 10px;
+  font-size: 25px;
+}
+#pie .piecontenedor p {
+  font-size: 15px;
+  text-align: center left;
+  padding: 2px;
+	margin: 10px;
+}
