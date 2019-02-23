@@ -2,12 +2,13 @@
   font-family: 'Dancing Script';
   src: url('Fuente/src/DancingScript-Bold.otf');
 }
+
 body{
   background-color: #02010a;
 }
 
 header {
-  padding: 2vh 2vw;
+  padding: 4vh 2vw;
 	border-radius: 10px 10px 0px 0px;
 	background-color: #5b7989;
   font-size: 40px;
@@ -15,6 +16,24 @@ header {
   color: white;
   text-align: left;
   text-shadow: 2px 2px 2px #02010a;
+  position:relative;
+}
+
+nav {
+  overflow: hidden;
+  position: absolute;
+  top:40px;
+  right:12px;
+}
+
+nav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0px 15px;
+  text-shadow: none;
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 #contenido figcaption{
@@ -23,18 +42,6 @@ header {
   text-decoration: underline;
 }
 
-.topnav {
-  overflow: hidden;
-}
-
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 0px 15px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
 #imagen1{
   margin-top: 150px;
@@ -101,6 +108,7 @@ box-shadow: 2px 2px #82c3a6;
 
 footer {
 	padding-top: 10px;
+  border-radius: 0px 0px 10px 10px;
 	text-align: center;
   background-color: #C6d5c5;
 }
@@ -124,4 +132,52 @@ footer {
   text-align: center left;
   padding: 2px;
 	margin: 10px;
+}
+
+#pie .piecontenedor p img {
+  width: 18px;
+  height: 18px;
+}
+
+
+.contenedorPai img {
+  width: 300px;
+  height: 150px;
+  padding: 10px 0px 0px 0px;
+}
+
+#contenidoPai {
+  display: flex;
+	flex-direction: column;
+  background-color: #d5c75f;
+}
+.contenedorPai > div {
+	text-align: center;
+	margin: 10px;
+	width: 100%;
+}
+
+.contenedorPai {
+	display: flex;
+	flex-direction: row;
+}
+
+#imagen1Pai{
+  filter: blur(10px);
+}
+
+#imagen2Pai{
+  filter: grayscale(100%);
+}
+
+#imagen3Pai{
+  filter: sepia(90%);
+}
+
+#imagen4Pai{
+  filter: grayscale(100%);
+}
+
+#imagen6Pai{
+  filter: grayscale(100%);
 }
